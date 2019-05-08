@@ -130,15 +130,17 @@ html {
 }
 
 .title {
+    margin: auto;
+    padding: 40vh 0;
     color: #2ca1a1;
-    left: 50%;
-    margin: 0;
+    /* left: 50%; */
+    /* margin: 0; */
     opacity: 0.2;
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 40%;
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* width: 40%; */
 }
 
 .title h1 {
@@ -149,7 +151,7 @@ html {
     font-size: 3rem;
     height: 3rem;
     margin: auto;
-    width: 60%;
+    width: 25%;
 }
 
 #app > div > div.welcome_div > div > h2 > span > div {
