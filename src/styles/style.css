@@ -1,0 +1,681 @@
+/* =============================================================== */
+/* ==================== GENERAL CUSTOMIZATION ==================== */
+/* =============================================================== */
+
+a {
+    text-decoration: none;
+    color: #2ca1a1;
+}
+
+body {
+    margin: 0!important;
+    font-family: 'Source Code Pro', monospace;
+    background-color: #fff;
+    width: 100%!important;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* =============================================================== */
+/* ========================= MENU BEGINS ========================= */
+/* =============================================================== */
+
+/* INITIAL ANIMATION */
+.circle {
+    animation: mymove 3s forwards;
+    float: left;
+    margin: 2rem;
+    opacity: 0;
+    position: fixed;
+    top: 25%;
+    right: 100%;
+    z-index: 1001;
+    transform: scale(0.1);
+}
+
+@keyframes mymove {
+    5% {transform: scale(0.5);
+    opacity: 1;
+    }
+    10% {
+        transform: scale(0.5);
+    }
+    12% {transform: scale(0.5);
+    }
+    35% {transform: scale(0.5);
+    }
+    100% {
+        transform: scale(0.3);
+        opacity: 1;
+        right: -5%;
+    }
+}
+
+/* INITIAL ANIMATION */
+.plus {
+    animation: reveal 3s forwards;
+    cursor: pointer;
+    opacity: 0;
+    transform-origin: 71% 80%;
+    transition: transform 2s;
+    transition: fill 0.5s;
+    
+}
+
+@keyframes reveal {
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.plus_closed {
+    cursor: pointer;
+    transform: rotate(-360deg);
+    transform-origin: 71% 80%;
+    transition: transform 0.5s;
+}
+
+.plus_active {
+    cursor: pointer;
+    fill: red;
+    transform: rotate(315deg);
+    transform-origin: 71% 80%;
+    transition: all 0.5s;
+}
+
+.hidden {
+    opacity: 0;
+    height: 0px;
+    transition: all 0.5s;
+}
+.show {
+    opacity: 1;
+    height: 1600px;
+    transition: all 0.5s;
+    width: 800px;
+}
+
+.menu_hidden {
+    opacity: 0;
+    display: none;
+}
+
+.menu_visible {
+    opacity: 1;
+    transition: all 1s;
+}
+
+/* ============================================================= */
+/* ========================= MENU ENDS ========================= */
+/* ============================================================= */
+
+
+
+
+
+/* ============================================================= */
+/* =================== WELCOME SCREEN BEGINS =================== */
+/* ============================================================= */
+.welcome_div {
+    background-attachment: fixed;
+    background-image: url('/images/welcome.png');
+    display: block;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.title {
+    color: #2ca1a1;
+    left: 50%;
+    margin: 0;
+    opacity: 0.2;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+}
+
+.title h1 {
+    font-size: 5rem;
+}
+
+.title h2 {
+    font-size: 3rem;
+    height: 3rem;
+    margin: auto;
+    width: 60%;
+}
+
+#app > div > div.welcome_div > div > h2 > span > div {
+    animation: blink 1s infinite;
+    background-color: #FF531B;
+    float: right;
+    height: 3rem;
+    width: 1.5rem;
+}
+
+@keyframes blink {
+    50% {
+    opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ============================================================= */
+/* ==================== WELCOME SCREEN ENDS ==================== */
+/* ============================================================= */
+
+
+
+/* ============================================================= */
+/* ==================== ABOUT SCREEN BEGINS ==================== */
+/* ============================================================= */
+
+.about {
+    background-color: #fff;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.star {
+    float: left;
+    animation: myOrbit1 100s infinite;
+    background-color: #2ca1a1;
+    border-radius: 25px;
+    height: 15px;
+    left: -10%;
+    margin: none;
+    opacity: 0;
+    padding: none;
+    position: relative;
+    transform: translate(400px,400px);
+    transition: all 1s;
+    width: 15px;
+    z-index: 0;
+}
+.star:nth-child(2) {
+    animation: myOrbit 150s infinite;
+    animation-delay: 20s;
+    background-color: #080816;
+    left: 30%;
+}
+.star:nth-child(3) {
+    animation: myOrbit1 200s infinite;
+    animation-delay: 10s;
+    background-color: #FF531B;
+    left: 70%;
+}
+.star:nth-child(4) {
+    animation: myOrbit 250s infinite;
+    animation-delay: 30s;
+    background-color: #2ca1a1;
+    left: -10%;
+    top:500px;
+}
+.star:nth-child(5) {
+    animation: myOrbit1 100s infinite;
+    animation-delay: 10s;
+    background-color: #080815;
+    left: 10%;
+}
+.star:nth-child(6) {
+    animation: myOrbit 150s infinite;
+    animation-delay: 20s;
+    background-color: #FF531B;
+    left: 80%;
+}
+.star:nth-child(7) {
+    animation: myOrbit1 200s infinite;
+    animation-delay: 5s;
+    background-color: #2ca1a1;
+    left: 90%;
+}
+.star:nth-child(8) {
+    animation: myOrbit 250s infinite;
+    animation-delay: 15s;
+    background-color: #080815;
+    left: 60%;
+}
+.star:nth-child(9) {
+    animation: myOrbit1 100s infinite;
+    animation-delay: 30s;
+    background-color: #FF531B;
+    left: 20%;
+}
+.star:nth-child(10) {
+    animation: myOrbit 150s infinite;
+    background-color: #2ca1a1;
+    left: 50%;
+}
+@keyframes myOrbit {
+    10% {opacity: 0.5}
+    25% { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    50% { transform: rotate(700deg) translateX(-50px) rotate(700deg); }
+    75% { transform: rotate(900deg) translateX(300px) rotate(-900deg); }
+    100% {opacity: 0;}
+}
+@keyframes myOrbit1 {
+    10% {opacity: 0.5}
+    25% { transform: rotate(900deg) translateX(300px) rotate(-900deg); } 
+    50% { transform: rotate(700deg) translateX(-400px) rotate(700deg); }
+    75% { transform: rotate(0deg) translateX(250px) rotate(0deg); }
+    100% {opacity: 0;}
+}
+.description {
+    border-bottom: #FF531B 1px dashed;
+    border-right: #FF531B 1px dashed;
+    color: #2ca1a1;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.5rem;
+    left: 0%;
+    margin-left: 5rem;
+    margin-top: 10rem;
+    padding: 0 2rem 2rem 0;
+    position: relative;
+    text-align: right;
+    width: 50%;
+}
+
+.skills {
+    border-top: #FF531B 1px dashed;
+    border-left: #FF531B 1px dashed;
+    color: #2ca1a1;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.5rem;
+    margin: 5rem 0 17rem 5rem;
+    padding: 2rem 0 0 2rem;
+    position: relative;
+    right: -30%;
+    text-align: left;
+    width: 50%;
+}
+
+.trim_top {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 2px;
+    margin-top: 3rem;
+}
+
+.trim_bottom {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 2px;
+    margin-bottom: 3rem;
+}
+
+.trim_block:nth-child(odd) {
+    background-color: #FF531B;
+}
+.trim_block:nth-child(even) {
+    background-color: #080815;
+}
+
+.trim_white {
+    background-color: #fff;
+}
+/* ============================================================= */
+/* ===================== ABOUT SCREEN ENDS ===================== */
+/* ============================================================= */
+
+
+
+
+/* ============================================================= */
+/* ====================== PORTFOLIO BEGINS ===================== */
+/* ============================================================= */
+
+.portfolio_title {
+    cursor: pointer;
+    font-size: 10rem;
+}
+.portfolio_personal {
+    background-color: #080815;
+    transition: all 0.4s ease-in;
+}
+.portfolio_professional {
+    background-color: #b9441d;
+    transition: all 0.4s ease-in;
+}
+.professional_title {
+    background-color: #080815;
+    color: #b9441d;
+    float: left;
+    margin-bottom: 1rem;
+    transition: all 0.4s ease-in;
+    width:80%;
+
+}
+
+.personal_title {
+    background-color: #080815;
+    border-bottom-left-radius: 25px;
+    color: #b9441d;
+    float: left;
+    margin-bottom: 1rem;
+    transition: all 0.4s ease-in;
+    width:20%;
+}
+.professional_title_selected {
+    background-color: #b9441d;
+    color: #080816;
+    float: left;
+    width:80%;
+    transition: all 0.4s ease-in;
+}
+
+.personal_title_selected {
+    background-color: #b9441d;
+    border-bottom-left-radius: 25px;
+    color: #080816;
+    float: left;
+    transition: all 0.4s ease-in;
+    width:20%;
+}
+
+div.personal_title > h2, div.personal_title_selected > h2, div.professional_title > h2, div.professional_title_selected > h2 {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+.project_display {
+    padding-bottom: 1rem;
+}
+
+.project_container {
+    background-color: #fff;
+    border: dashed 1px #2ca1a1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    opacity: 0;
+    position: relative;
+    width: 60%;
+}
+
+.project_info {
+    padding: 1rem;
+}
+.portfolio_professional > div > div > .project_container:nth-child(odd) {
+    animation: enter_left_pro 1s forwards;
+}
+
+.portfolio_professional > div > div > .project_container:nth-child(even) {
+    animation: enter_right_pro 1s forwards;
+}
+
+.portfolio_personal > div > div > .project_container:nth-child(odd) {
+    animation: enter_left 1s forwards;
+}
+
+.portfolio_personal > div > div > .project_container:nth-child(even) {
+    animation: enter_right 1s forwards;
+}
+
+@keyframes enter_left {
+    0% {
+    opacity: 0;
+    left: -100%;
+
+    }
+    100% {
+        left: 00%;
+        opacity: 1;
+    }
+}
+
+@keyframes enter_right {
+    0% {
+    opacity: 0;
+    right: -100%;
+
+    }
+    100% {
+        right: 00%;
+        opacity: 1;
+    }
+}
+@keyframes enter_left_pro {
+    0% {
+    opacity: 0;
+    left: -100%;
+
+    }
+    100% {
+        left: 00%;
+        opacity: 1;
+    }
+}
+
+@keyframes enter_right_pro {
+    0% {
+    opacity: 0;
+    right: -100%;
+
+    }
+    100% {
+        right: 00%;
+        opacity: 1;
+    }
+}
+.project_image_container > a > img {
+    max-width: 100%;
+    padding: 0.5rem;
+}
+
+.project_info_header {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.fa-github {
+
+    padding: 1rem 0rem;
+    font-size: 2rem;
+}
+
+/* ============================================================= */
+/* ======================= PORTFOLIO ENDS ====================== */
+/* ============================================================= */
+
+
+/* ============================================================= */
+/* ======================== CONTACT BEGINS ===================== */
+/* ============================================================= */
+
+#contact {
+    height: 25vh;
+}
+
+.contact_container {
+    padding: 5rem 0;
+    width: 20%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.contact_container > div {
+    text-align: center;
+}
+
+.contact_container > div > a > i {
+    font-size: 5rem;
+    padding: 0.5rem;
+}
+
+.contact_container > div > a > i:hover {
+    color: #FF531B; 
+}
+/* ============================================================= */
+/* ======================== CONTACT ENDS ======================= */
+/* ============================================================= */
+
+
+
+/* ============================================================= */
+/* ========================== RESPONSIVE ======================= */
+/* ============================================================= */
+
+@media only screen and (max-width: 600px) {
+
+
+    .circle {
+        animation: mymove 3s forwards;
+        /* top: 25%; */
+    }
+
+    @keyframes mymove {
+        5% {transform: scale(0.5);
+        opacity: 1;
+        }
+        10% {
+            transform: scale(0.5);
+        }
+        12% {transform: scale(0.5);
+        }
+        35% {transform: scale(0.5);
+        }
+        100% {
+            transform: scale(0.2);
+            opacity: 1;
+            right: -60%;
+        }
+    }
+    /* ============================================================= */
+    /* =================== WELCOME SCREEN BEGINS =================== */
+    /* ============================================================= */
+
+    .title {
+        color: #2ca1a1;
+        left: 50%;
+        margin: 0;
+        opacity: 0.2;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+    }
+    
+    .title h2 {
+        font-size: 1rem;
+        height: 1rem;
+        margin: auto;
+        width: 50%;
+    }
+
+    #app > div > div.welcome_div > div > h2 > span > div {
+        animation: blink 1s infinite;
+        background-color: #FF531B;
+        float: right;
+        height: 1.2rem;
+        width: 0.5rem;
+        /* top: 200%; */
+    }
+    /* ============================================================= */
+    /* ==================== WELCOME SCREEN ENDS ==================== */
+    /* ============================================================= */
+
+
+    /* ============================================================= */
+    /* ==================== ABOUT SCREEN BEGINS ==================== */
+    /* ============================================================= */
+
+    .description {
+
+        font-size: 1rem;
+        margin: 9rem auto 5rem;
+        width: 70%;
+
+    }
+    
+    .skills {
+        font-size: 1rem;
+        margin: 5rem auto 13rem;
+        width: 70%;
+        right: 0%;
+    }
+
+    /* ============================================================= */
+    /* ===================== ABOUT SCREEN ENDS ===================== */
+    /* ============================================================= */
+    
+
+    /* ============================================================= */
+    /* ====================== PORTFOLIO BEGINS ===================== */
+    /* ============================================================= */
+
+    .professional_title {
+        width: 60%;
+    }
+
+    .professional_title_selected {
+        width: 60%;
+    }
+    .personal_title {
+        width: 40%;
+    }
+
+    .personal_title_selected {
+        width: 40%;
+    }
+    div.personal_title > h2, div.personal_title_selected > h2, div.professional_title > h2, div.professional_title_selected > h2 {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+
+    .project_display {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+    .project_container {
+
+        display: block;
+        width: 80%;
+    }
+
+    .project_image_container {
+        margin: auto;
+        text-align: center;
+    }
+
+    .project_image_container > a > img {
+        max-width: 90%;
+        padding: 0.5rem;
+    }
+
+    .project_info > a > h2 {
+        font-size: 1rem;
+    }
+
+    .project_info_header > div > a > h2 {
+        font-size: 1rem;
+    }
+
+    .fa-github {
+
+        padding: 1rem 0rem;
+        font-size: 1rem;
+    }
+
+    .project_info > ul {
+        color: #3a3a3a;
+        font-size: 0.8
+    }
+    /* ============================================================= */
+    /* ======================= PORTFOLIO ENDS ====================== */
+    /* ============================================================= */
+}
