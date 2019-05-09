@@ -527,7 +527,7 @@ div.personal_title > h2, div.personal_title_selected > h2, div.professional_titl
 /* ========================== RESPONSIVE ======================= */
 /* ============================================================= */
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
 
     .circle {
