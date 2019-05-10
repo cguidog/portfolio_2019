@@ -30,22 +30,22 @@ render () {
                 <path className={this.state.plusclass} onClick={this.showMenu} d="M486,658.5 L561.5,658.5 L561.5,758.5 L486,758.5 L486,834 L386,834 L386,758.5 L310.5,758.5 L310.5,658.5 L386,658.5 L386,583 L486,583 L486,658.5 Z" id="Combined-Shape" fill="#080815"></path>
                 <g className={this.state.menuclass}>
                 <text id="HOME" fontSize="94" fontWeight="normal" fill="#080815">
-                <a xlinkHref="/#home">
+                <a xlinkHref="#home">
                 <tspan x="205.181641" y="140">Home</tspan>
                 </a>
                 </text>
                 <text id="ABOUT" fontSize="94" fontWeight="normal" fill="#080815">
-                <a xlinkHref="/#about">
+                <a xlinkHref="#about">
                 <tspan x="176.977051" y="270">About</tspan>
                 </a>
                 </text>
                 <text id="PORTFOLIO" fontSize="94" fontWeight="normal" fill="#080815">
-                <a xlinkHref="/#portfolio">
+                <a xlinkHref="#portfolio">
                 <tspan x="64.1586914" y="400">Portfolio</tspan>
                 </a>
                 </text>
                 <text id="CONTACT" fontSize="94" fontWeight="normal" fill="#080815">
-                <a xlinkHref="/#contact">
+                <a xlinkHref="#contact">
                 <tspan x="120.567871" y="530">Contact</tspan>
                 </a>
                 </text>
