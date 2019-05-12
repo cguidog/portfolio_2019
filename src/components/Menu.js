@@ -6,6 +6,7 @@ export default class Menu extends React.Component {
         super(props);
         this.showMenu = this.showMenu.bind(this);
         this.state = {
+            initialclass: 'circle',
             activeclass: 'hidden',
             plusclass: 'plus',
             menuclass: 'menu_hidden'
@@ -14,16 +15,16 @@ export default class Menu extends React.Component {
 
     showMenu () {
         if (this.state.activeclass == 'show') {
-            this.setState(() => ({activeclass: 'hidden', plusclass: 'plus_closed', menuclass:'menu_hidden'}));
+            this.setState(() => ({initialclass: 'circle_close', activeclass: 'hidden', plusclass: 'plus_closed', menuclass:'menu_hidden'}));
         } else {
-            this.setState(() => ({activeclass: 'show', plusclass: 'plus_active', menuclass:'menu_visible'}));
+            this.setState(() => ({initialclass: 'circle_open', activeclass: 'show', plusclass: 'plus_active', menuclass:'menu_visible'}));
         };
 
     };
 render () {
     return (
         <div>
-        <svg className="circle" width="611px" onClick={this.showMenu} height="883px" viewBox="0 0 611 883" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <svg className={this.state.initialclass} width="611px" onClick={this.showMenu} height="883px" viewBox="0 0 611 883" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                 <path id='menu' className={this.state.activeclass} d="M611,473 L611,708 C611,804.649831 532.649831,883 436,883 L269,883 L60,883 C26.862915,883 1.11635499e-14,856.137085 7.10542736e-15,823 L1.08387875e-15,473 L-1.42108547e-14,60 C-1.82689772e-14,26.862915 26.862915,6.08718376e-15 60,0 L551,0 C584.137085,-6.08718376e-15 611,26.862915 611,60 L611,473 Z" id="Combined-Shape" fill="#FF531B"></path>
                 <circle id="Oval" fill="#FF531B" cx="436" cy="708" r="175"></circle>
