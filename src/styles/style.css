@@ -36,6 +36,29 @@ html {
     transition: all 0.5s ease-out;
 }
 
+.circle_open {
+    float: left;
+    margin: 2rem;
+    opacity: 1;
+    position: fixed;
+    top: 15%;
+    right: -5%;
+    z-index: 1001;
+    transform: scale(0.3);
+    transition: all 0.5s ease-out;
+}
+
+.circle_close {
+    float: left;
+    margin: 2rem;
+    opacity: 1;
+    position: fixed;
+    top: 15%;
+    right: -5%;
+    z-index: 1001;
+    transform: scale(0.3);
+    transition: all 0.5s ease-out;
+}
 @keyframes mymove {
     5% {transform: scale(0.5);
     opacity: 1;
@@ -540,7 +563,7 @@ div.personal_title > h2, div.personal_title_selected > h2, div.professional_titl
     .circle_open {
         transform: scale(0.4);
         transition: all 0.5s ease-out;
-        top: 5%;
+        top: -5%;
         float: left;
         margin: 2rem;
         opacity: 1;
@@ -554,7 +577,7 @@ div.personal_title > h2, div.personal_title_selected > h2, div.professional_titl
         margin: 2rem;
         opacity: 1;
         position: fixed;
-        top: 5%;
+        top: -5%;
         right: -70%;
         z-index: 1001;
         transform: scale(0.15);
