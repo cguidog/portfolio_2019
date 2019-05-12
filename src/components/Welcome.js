@@ -7,7 +7,11 @@ export default class Welcome extends React.Component {
             <div id="home" className="welcome_div">
                 <div className="title">
                     <h1> &lt;CarlosGuido /> </h1>
-                    <h2>web_developer<span><div></div></span></h2>
+                    <div className="h2_container">
+                        <div><h2>web_developer</h2></div>
+                        <div></div>
+                    </div>
+                    
                 </div>                
             </div>
         );

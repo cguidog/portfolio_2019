@@ -158,28 +158,29 @@ html {
     margin: auto;
     padding: 40vh 0;
     color: #2ca1a1;
-    /* left: 50%; */
-    /* margin: 0; */
     opacity: 0.2;
-    /* position: absolute; */
     text-align: center;
-    /* top: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* width: 40%; */
 }
 
 .title h1 {
     font-size: 5rem;
 }
-
-.title h2 {
-    font-size: 3rem;
-    height: 3rem;
+.h2_container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 60%;
     margin: auto;
-    width: 25%;
+}
+#home > div > div > div:nth-child(1) {
+    text-align: right;
+    font-size: 1.5rem;
 }
 
-#app > div > div.welcome_div > div > h2 > span > div {
+#home > div > div > div:nth-child(1) > h2{
+    margin: 0;
+}
+
+#home > div > div > div:nth-child(2){
     animation: blink 1s infinite;
     background-color: #FF531B;
     float: right;
@@ -552,12 +553,12 @@ div.personal_title > h2, div.personal_title_selected > h2, div.professional_titl
 /* ========================== RESPONSIVE ======================= */
 /* ============================================================= */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
 
 
     .circle {
         animation: mymove 3s forwards;
-        top: 5%;
+        top: -5%;
     }
 
     .circle_open {
@@ -606,6 +607,196 @@ div.personal_title > h2, div.personal_title_selected > h2, div.professional_titl
     /* ============================================================= */
 
     .title {
+        width: 90%;
+    }
+
+    .title h1 {
+        font-size: 1.8rem;
+    }
+    
+    .h2_container {
+        display: grid;
+        grid-template-columns: 90% 10%;
+        width: 60%;
+        margin: auto;
+    }
+    #home > div > div > div:nth-child(1) {
+        text-align: right;
+        font-size: 0.9rem;
+    }
+    
+    #home > div > div > div:nth-child(1) > h2{
+        margin: 0;
+    }
+    
+    #home > div > div > div:nth-child(2){
+        animation: blink 1s infinite;
+        background-color: #FF531B;
+        float: right;
+        height: 1.75rem;
+        width: 0.5rem;
+    }
+    /* ============================================================= */
+    /* ==================== WELCOME SCREEN ENDS ==================== */
+    /* ============================================================= */
+
+
+    /* ============================================================= */
+    /* ==================== ABOUT SCREEN BEGINS ==================== */
+    /* ============================================================= */
+
+    .description {
+
+        font-size: 1rem;
+        margin: 9rem auto 5rem;
+        width: 70%;
+
+    }
+    
+    .skills {
+        font-size: 1rem;
+        margin: 5rem auto 13rem;
+        width: 70%;
+        right: 0%;
+    }
+
+    /* ============================================================= */
+    /* ===================== ABOUT SCREEN ENDS ===================== */
+    /* ============================================================= */
+    
+
+    /* ============================================================= */
+    /* ====================== PORTFOLIO BEGINS ===================== */
+    /* ============================================================= */
+
+    .professional_title {
+        width: 60%;
+    }
+
+    .professional_title_selected {
+        width: 60%;
+    }
+    .personal_title {
+        width: 40%;
+    }
+
+    .personal_title_selected {
+        width: 40%;
+    }
+    div.personal_title > h2, div.personal_title_selected > h2, div.professional_title > h2, div.professional_title_selected > h2 {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+
+    .project_display {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+    .project_container {
+
+        display: block;
+        width: 80%;
+    }
+
+    .project_image_container {
+        margin: auto;
+        text-align: center;
+    }
+
+    .project_image_container > a > img {
+        max-width: 90%;
+        padding: 0.5rem;
+    }
+
+    .project_info > a > h2 {
+        font-size: 1rem;
+    }
+
+    .project_info_header > div > a > h2 {
+        font-size: 1rem;
+    }
+
+    .fa-github {
+
+        padding: 1rem 0rem;
+        font-size: 1rem;
+    }
+
+    .project_info > ul {
+        color: #3a3a3a;
+        font-size: 0.8
+    }
+    /* ============================================================= */
+    /* ======================= PORTFOLIO ENDS ====================== */
+    /* ============================================================= */
+
+    /* ============================================================= */
+    /* ======================== CONTACT BEGINS ===================== */
+    /* ============================================================= */
+
+    .contact_container {
+        width: 60%;
+    }
+    /* ============================================================= */
+    /* ======================== CONTACT ENDS ======================= */
+    /* ============================================================= */
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 486px) {
+
+
+    .circle {
+        animation: mymove 3s forwards;
+        top: -5%;
+    }
+
+    .circle_open {
+        transform: scale(0.4);
+        transition: all 0.5s ease-out;
+        top: -5%;
+        float: right;
+        margin: 2rem;
+        opacity: 1;
+        position: fixed;
+        right: -45%;
+        z-index: 1001;
+    }
+
+    .circle_close {
+        float: right;
+        margin: 2rem;
+        opacity: 1;
+        position: fixed;
+        top: -5%;
+        right: -45%;
+        z-index: 1001;
+        transform: scale(0.15);
+        transition: all 0.5s ease-in;
+    }
+
+    @keyframes mymove {
+        5% {transform: scale(0.5);
+        opacity: 1;
+        }
+        10% {
+            transform: scale(0.5);
+        }
+        12% {transform: scale(0.5);
+        }
+        35% {transform: scale(0.5);
+        }
+        100% {
+            transform: scale(0.15);
+            opacity: 1;
+            right: -45%;
+        }
+    }
+    /* ============================================================= */
+    /* =================== WELCOME SCREEN BEGINS =================== */
+    /* ============================================================= */
+
+    /* .title {
         color: #2ca1a1;
         left: 50%;
         margin: 0;
@@ -615,26 +806,33 @@ div.personal_title > h2, div.personal_title_selected > h2, div.professional_titl
         top: 50%;
         transform: translate(-50%, -50%);
         width: 90%;
-    }
+    } */
 
     .title h1 {
         font-size: 2rem;
     }
     
-    .title h2 {
-        font-size: 1rem;
-        height: 1rem;
+    .h2_container {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        width: 60%;
         margin: auto;
-        width: 50%;
     }
-
-    #app > div > div.welcome_div > div > h2 > span > div {
+    #home > div > div > div:nth-child(1) {
+        text-align: right;
+        font-size: 0.9rem;
+    }
+    
+    #home > div > div > div:nth-child(1) > h2{
+        margin: 0;
+    }
+    
+    #home > div > div > div:nth-child(2){
         animation: blink 1s infinite;
         background-color: #FF531B;
         float: right;
-        height: 1.2rem;
+        height: 1.75rem;
         width: 0.5rem;
-        /* top: 200%; */
     }
     /* ============================================================= */
     /* ==================== WELCOME SCREEN ENDS ==================== */
