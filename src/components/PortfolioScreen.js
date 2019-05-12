@@ -15,9 +15,9 @@ export default class PortfolioScreen extends React.Component {
             title1: 'Professional Projects',
             title2: 'Personal Projects',
             projects: [[
-                    {title: 'Kraemer & Kraemer', url: 'https://kraemerlaw.com', image: '/images/kraemer_law.jpg', description: ['Website managed with WordPress.', 'SEO optimization', 'Speed and Performance optimization', 'Theme and Plugin customization using JavaScript and PHP']},
-                    {title: 'Panama retirees and Pensioners Visa', url: 'https://panamaretireespensionersvisa.com/', image: '/images/prpv.jpg', description: ['Website managed with WordPress.', 'SEO optimization', 'Speed and Performance optimization', 'Theme and Plugin customization using JavaScript and PHP']},
-                    {title: 'Lácteos Don Joaquín', url: 'https://lacteosdonjoaquin.com/', image: '/images/don_joaquin.jpg', description: ['Website managed with WordPress.', 'SEO optimization', 'Speed and Performance optimization']}
+                    {title: 'Kraemer & Kraemer', url: 'https://kraemerlaw.com', image: '/images/kraemer_law.jpg', description: ['Website managed with WordPress.', 'SEO optimization.', 'Speed and Performance optimization.', 'Theme and Plugin customization using JavaScript and PHP.']},
+                    {title: 'Panama retirees and Pensioners Visa', url: 'https://panamaretireespensionersvisa.com/', image: '/images/prpv.jpg', description: ['Website managed with WordPress.', 'SEO optimization.', 'Speed and Performance optimization.', 'Theme and Plugin customization using JavaScript and PHP.']},
+                    {title: 'Lácteos Don Joaquín', url: 'https://lacteosdonjoaquin.com/', image: '/images/don_joaquin.jpg', description: ['Website managed with WordPress.', 'SEO optimization.', 'Speed and Performance optimization.']}
                 ],
                 [
                     {title: 'Circles', url: 'https://cguidog.github.io/circles/index.html', image: '/images/circles.jpg', git: 'https://github.com/cguidog/circles', description: ['Random circles generator built with Paper.js (Needs a physical keyboard to work)']},

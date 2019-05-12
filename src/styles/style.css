@@ -234,12 +234,14 @@ html {
     animation-delay: 20s;
     background-color: #080816;
     left: 30%;
+    top: 80vh;
 }
 .star:nth-child(3) {
     animation: myOrbit1 200s infinite;
     animation-delay: 10s;
     background-color: #FF531B;
     left: 70%;
+    top: 30vh;
 }
 .star:nth-child(4) {
     animation: myOrbit 250s infinite;
@@ -253,35 +255,41 @@ html {
     animation-delay: 10s;
     background-color: #080815;
     left: 10%;
+    top: 50vh;
 }
 .star:nth-child(6) {
     animation: myOrbit 150s infinite;
     animation-delay: 20s;
     background-color: #FF531B;
     left: 80%;
+    top: 10vh;
 }
 .star:nth-child(7) {
     animation: myOrbit1 200s infinite;
     animation-delay: 5s;
     background-color: #2ca1a1;
     left: 90%;
+    top: 90vh;
 }
 .star:nth-child(8) {
     animation: myOrbit 250s infinite;
     animation-delay: 15s;
     background-color: #080815;
     left: 60%;
+    top: 40vh;
 }
 .star:nth-child(9) {
     animation: myOrbit1 100s infinite;
     animation-delay: 30s;
     background-color: #FF531B;
     left: 20%;
+    top: 10vh;
 }
 .star:nth-child(10) {
     animation: myOrbit 150s infinite;
     background-color: #2ca1a1;
     left: 50%;
+    top: 60vh;
 }
 @keyframes myOrbit {
     10% {opacity: 0.5}
@@ -796,17 +804,9 @@ div.personal_title > h2, div.personal_title_selected > h2, div.professional_titl
     /* =================== WELCOME SCREEN BEGINS =================== */
     /* ============================================================= */
 
-    /* .title {
-        color: #2ca1a1;
-        left: 50%;
-        margin: 0;
-        opacity: 0.2;
-        position: absolute;
-        text-align: center;
-        top: 50%;
-        transform: translate(-50%, -50%);
+    .title {
         width: 90%;
-    } */
+    }
 
     .title h1 {
         font-size: 2rem;
@@ -918,6 +918,388 @@ div.personal_title > h2, div.personal_title_selected > h2, div.professional_titl
 
         padding: 1rem 0rem;
         font-size: 1rem;
+    }
+
+    .project_info > ul {
+        color: #3a3a3a;
+        font-size: 0.8
+    }
+    /* ============================================================= */
+    /* ======================= PORTFOLIO ENDS ====================== */
+    /* ============================================================= */
+
+    /* ============================================================= */
+    /* ======================== CONTACT BEGINS ===================== */
+    /* ============================================================= */
+
+    .contact_container {
+        width: 60%;
+    }
+    /* ============================================================= */
+    /* ======================== CONTACT ENDS ======================= */
+    /* ============================================================= */
+
+}
+
+@media screen and (min-width: 487px) and (max-width: 700px) {
+
+
+    .circle {
+        animation: mymove 3s forwards;
+        top: -5%;
+    }
+
+    .circle_open {
+        transform: scale(0.2);
+        transition: all 0.5s ease-out;
+        top: -5%;
+        float: right;
+        margin: 2rem;
+        opacity: 1;
+        position: fixed;
+        right: -40%;
+        z-index: 1001;
+    }
+
+    .circle_close {
+        float: right;
+        margin: 2rem;
+        opacity: 1;
+        position: fixed;
+        top: -5%;
+        right: -40%;
+        z-index: 1001;
+        transform: scale(0.15);
+        transition: all 0.5s ease-in;
+    }
+
+    @keyframes mymove {
+        5% {transform: scale(0.5);
+        opacity: 1;
+        }
+        10% {
+            transform: scale(0.5);
+        }
+        12% {transform: scale(0.5);
+        }
+        35% {transform: scale(0.5);
+        }
+        100% {
+            transform: scale(0.15);
+            opacity: 1;
+            right: -40%;
+        }
+    }
+
+    /* ============================================================= */
+    /* =================== WELCOME SCREEN BEGINS =================== */
+    /* ============================================================= */
+
+    .title {
+        width: 90%;
+    }
+
+    .title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .h2_container {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        width: 60%;
+        margin: auto;
+    }
+    #home > div > div > div:nth-child(1) {
+        text-align: right;
+        font-size: 0.9rem;
+    }
+    
+    #home > div > div > div:nth-child(1) > h2{
+        margin: 0;
+    }
+    
+    #home > div > div > div:nth-child(2){
+        animation: blink 1s infinite;
+        background-color: #FF531B;
+        float: right;
+        height: 1.75rem;
+        width: 0.5rem;
+    }
+    /* ============================================================= */
+    /* ==================== WELCOME SCREEN ENDS ==================== */
+    /* ============================================================= */
+
+
+    /* ============================================================= */
+    /* ==================== ABOUT SCREEN BEGINS ==================== */
+    /* ============================================================= */
+
+    .description {
+
+        font-size: 1rem;
+        margin: 9rem auto 5rem;
+        width: 70%;
+
+    }
+    
+    .skills {
+        font-size: 1rem;
+        margin: 5rem auto 13rem;
+        width: 70%;
+        right: 0%;
+    }
+
+    /* ============================================================= */
+    /* ===================== ABOUT SCREEN ENDS ===================== */
+    /* ============================================================= */
+    
+
+    /* ============================================================= */
+    /* ====================== PORTFOLIO BEGINS ===================== */
+    /* ============================================================= */
+
+    .professional_title {
+        width: 60%;
+    }
+
+    .professional_title_selected {
+        width: 60%;
+    }
+    .personal_title {
+        width: 40%;
+    }
+
+    .personal_title_selected {
+        width: 40%;
+    }
+    div.personal_title > h2, div.personal_title_selected > h2, div.professional_title > h2, div.professional_title_selected > h2 {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+
+    .project_display {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+    .project_container {
+
+        display: block;
+        width: 80%;
+    }
+
+    .project_image_container {
+        margin: auto;
+        text-align: center;
+    }
+
+    .project_image_container > a > img {
+        max-width: 90%;
+        padding: 0.5rem;
+    }
+
+    .project_info > a > h2 {
+        font-size: 1rem;
+    }
+
+    .project_info_header > div > a > h2 {
+        font-size: 1rem;
+    }
+
+    .fa-github {
+
+        padding: 1rem 0rem;
+        font-size: 1rem;
+    }
+
+    .project_info > ul {
+        color: #3a3a3a;
+        font-size: 0.8
+    }
+    /* ============================================================= */
+    /* ======================= PORTFOLIO ENDS ====================== */
+    /* ============================================================= */
+
+    /* ============================================================= */
+    /* ======================== CONTACT BEGINS ===================== */
+    /* ============================================================= */
+
+    .contact_container {
+        width: 60%;
+    }
+    /* ============================================================= */
+    /* ======================== CONTACT ENDS ======================= */
+    /* ============================================================= */
+
+}
+
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+
+
+    .circle {
+        animation: mymove 3s forwards;
+        top: -5%;
+    }
+
+    .circle_open {
+        transform: scale(0.2);
+        transition: all 0.5s ease-out;
+        top: -5%;
+        float: right;
+        margin: 2rem;
+        opacity: 1;
+        position: fixed;
+        right: -27%;
+        z-index: 1001;
+    }
+
+    .circle_close {
+        float: right;
+        margin: 2rem;
+        opacity: 1;
+        position: fixed;
+        top: -5%;
+        right: -27%;
+        z-index: 1001;
+        transform: scale(0.2);
+        transition: all 0.5s ease-in;
+    }
+
+    @keyframes mymove {
+        5% {transform: scale(0.5);
+        opacity: 1;
+        }
+        10% {
+            transform: scale(0.5);
+        }
+        12% {transform: scale(0.5);
+        }
+        35% {transform: scale(0.5);
+        }
+        100% {
+            transform: scale(0.2);
+            opacity: 1;
+            right: -27%;
+        }
+    }
+
+    /* ============================================================= */
+    /* =================== WELCOME SCREEN BEGINS =================== */
+    /* ============================================================= */
+
+    .title {
+        width: 90%;
+    }
+
+    .title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .h2_container {
+        display: grid;
+        grid-template-columns: 65% 35%;
+        width: 60%;
+        margin: auto;
+    }
+    #home > div > div > div:nth-child(1) {
+        text-align: right;
+        font-size: 0.9rem;
+    }
+    
+    #home > div > div > div:nth-child(1) > h2{
+        margin: 0;
+    }
+    
+    #home > div > div > div:nth-child(2){
+        animation: blink 1s infinite;
+        background-color: #FF531B;
+        float: right;
+        height: 1.75rem;
+        width: 0.5rem;
+    }
+    /* ============================================================= */
+    /* ==================== WELCOME SCREEN ENDS ==================== */
+    /* ============================================================= */
+
+
+    /* ============================================================= */
+    /* ==================== ABOUT SCREEN BEGINS ==================== */
+    /* ============================================================= */
+
+    .description {
+
+        font-size: 1rem;
+        margin: 9rem auto 5rem;
+        width: 70%;
+
+    }
+    
+    .skills {
+        font-size: 1rem;
+        margin: 5rem auto 13rem;
+        width: 70%;
+        right: 0%;
+    }
+
+    /* ============================================================= */
+    /* ===================== ABOUT SCREEN ENDS ===================== */
+    /* ============================================================= */
+    
+
+    /* ============================================================= */
+    /* ====================== PORTFOLIO BEGINS ===================== */
+    /* ============================================================= */
+
+    .professional_title {
+        width: 65%;
+    }
+
+    .professional_title_selected {
+        width: 65%;
+    }
+    .personal_title {
+        width: 35%;
+    }
+
+    .personal_title_selected {
+        width: 35%;
+    }
+    div.personal_title > h2, div.personal_title_selected > h2, div.professional_title > h2, div.professional_title_selected > h2 {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+
+    .project_display {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+    .project_container {
+
+        display: block;
+        width: 80%;
+    }
+
+    .project_image_container {
+        margin: auto;
+        text-align: center;
+    }
+
+    .project_image_container > a > img {
+        max-width: 90%;
+        padding: 0.5rem;
+    }
+
+    .project_info > a > h2 {
+        font-size: 1.5rem;
+    }
+
+    .project_info_header > div > a > h2 {
+        font-size: 1.5rem;
+    }
+
+    .fa-github {
+
+        padding: 1.5rem 0rem;
+        font-size: 1.5rem;
     }
 
     .project_info > ul {

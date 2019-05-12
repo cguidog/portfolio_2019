@@ -45,11 +45,6 @@ render () {
                 <tspan x="64.1586914" y="400">Portfolio</tspan>
                 </a>
                 </text>
-                <text id="CONTACT" fontSize="94" fontWeight="normal" fill="#080815">
-                <a xlinkHref="/#contact">
-                <tspan x="120.567871" y="530">Contact</tspan>
-                </a>
-                </text>
                 </g>
             </g>
         </svg>  
