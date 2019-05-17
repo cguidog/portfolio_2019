@@ -20,13 +20,13 @@ export default class PortfolioScreen extends React.Component {
                     {title: 'Lácteos Don Joaquín', url: 'https://lacteosdonjoaquin.com/', image: '/images/don_joaquin.jpg', description: ['Website managed with WordPress.', 'SEO optimization.', 'Speed and Performance optimization.']}
                 ],
                 [
-                    {title: 'Portfolio Site', url: 'https://iamguido.com', image: '/images/portfolio.png', git: 'https://github.com/cguidog/portfolio_2019', description: ['The same website you are at right now.', 'Built with ReactJS.', 'Other tools/technologies: Webpack, Babel, Express & SVG.']},
-                    {title: 'Circles', url: 'https://cguidog.github.io/circles/index.html', image: '/images/circles.jpg', git: 'https://github.com/cguidog/circles', description: ['Random circles generator built with Paper.js (Needs a physical keyboard to work)']},
-                    {title: 'React Car Search', url: 'https://react-car-search.herokuapp.com/', image: '/images/react_car_search.jpg', git: 'https://github.com/cguidog/carDisplay', description: ['Simple search tool created with React.']},
-                    {title: 'RGB Color Guessing Game', url: 'https://cguidog.github.io/rgb-color-game/', image: '/images/rgb_game.jpg', git: 'https://github.com/cguidog/rgb-color-game', description: ['Test your RGB knowledge by picking the right color.']},
-                    {title: 'ToDo List', url: 'https://cguidog.github.io/to-do-list/index.html', image: '/images/to_do_list.jpg', git: 'https://github.com/cguidog/to-do-list', description: ['A simple to-do app created with Jquery.']},
-                    {title: 'Weather App', url: 'https://codepen.io/cguidog/full/LJPZry/', image: '/images/weather_app.jpg', git: 'https://github.com/cguidog/weather-app', description: ['App created with Javascript to show local weather.']},
-                    {title: 'Wikipedia Viewer', url: 'https://cguidog.github.io/wikipediaViewer/', image: '/images/wiki_viewer.jpg', git: 'https://github.com/cguidog/wikipediaViewer', description: ['Display 5 main results from a Wikipedia Search.']}
+                    {title: 'Portfolio Site', url: 'https://iamguido.com', image: '/images/portfolio.png', git: 'https://github.com/cguidog/portfolio_2019', description: ['The same website you are at right now.', 'Built with ReactJS.', 'Uses Babel, Express, SVG & Webpack.']},
+                    {title: 'React Car Search', url: 'https://react-car-search.herokuapp.com/', image: '/images/react_car_search.jpg', git: 'https://github.com/cguidog/carDisplay', description: ['Simple search tool created with React.','Built with ReactJS', 'Uses Babel, Express, Redux & Webpack.']},
+                    {title: 'ToDo List', url: 'https://cguidog.github.io/to-do-list/index.html', image: '/images/to_do_list.jpg', git: 'https://github.com/cguidog/to-do-list', description: ['A simple to-do app.', 'Built with Jquery.']},
+                    {title: 'Weather App', url: 'https://codepen.io/cguidog/full/LJPZry/', image: '/images/weather_app.jpg', git: 'https://github.com/cguidog/weather-app', description: ['Displays your local weather.', 'Built with Javascript.', 'Uses API, JSON.']},
+                    {title: 'Wikipedia Viewer', url: 'https://cguidog.github.io/wikipediaViewer/', image: '/images/wiki_viewer.jpg', git: 'https://github.com/cguidog/wikipediaViewer', description: ['Display 5 main results from a Wikipedia Search.', 'Built with Jquery.', 'Uses API, JSON']},
+                    {title: 'Circles', url: 'https://cguidog.github.io/circles/index.html', image: '/images/circles.jpg', git: 'https://github.com/cguidog/circles', description: ['Random circles generator. (Needs a physical keyboard to work)', 'Built with Javascript and the Paper.Js API.', 'Uses JSON.']},
+                    {title: 'RGB Color Guessing Game', url: 'https://cguidog.github.io/rgb-color-game/', image: '/images/rgb_game.jpg', git: 'https://github.com/cguidog/rgb-color-game', description: ['Test your RGB knowledge by picking the right color.','Built with Javascript.']}
                 ]
             ]
         };
