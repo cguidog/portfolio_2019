@@ -1,6 +1,6 @@
-#portfolio_2019
+portfolio_2019
 
-#Description
+Description
 
 This project contains a list of some professional and personal projects I've been working on.
 Built with ReactJS.
