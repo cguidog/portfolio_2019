@@ -15,12 +15,12 @@
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.1",
+    "babel-loader": "^7.1.5",
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^2.1.1",
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^3.0.1",
     "install": "^0.12.2",
@@ -31,10 +31,10 @@
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "validator": "^10.11.0",
-    "webpack": "^4.30.0",
-    "webpack-dev-server": "^3.3.1"
+    "webpack": "^4.33.0",
+    "webpack-dev-server": "^3.7.1"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.2"
+    "webpack-cli": "^3.3.3"
   }
 }
