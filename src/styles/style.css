@@ -148,7 +148,7 @@ html {
 /* ============================================================= */
 .welcome_div {
     background-attachment: fixed;
-    background-image: url('/images/welcome.png');
+    background-image: url('/images/welcome.jpg');
     display: block;
     height: 100vh;
     overflow: hidden;
