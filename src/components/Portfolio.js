@@ -15,7 +15,6 @@ export default class Portfolio extends React.Component {
                 <Welcome />
                 <Skills />
                 <PortfolioScreen />
-                <Contact />
             </div>
         );
     };
