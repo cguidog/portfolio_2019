@@ -21,7 +21,7 @@ export default class PortfolioScreen extends React.Component {
                     {title: 'Lácteos Don Joaquín', url: 'https://lacteosdonjoaquin.com/', image: '/images/don_joaquin.jpg', description: ['Website managed with WordPress.', 'SEO optimization.', 'Speed and Performance optimization.']}
                 ],
                 [
-                    {title: 'Scales Buddy', url: 'https://scalesbuddy.com', image: '/images/scales_buddy.jpg', description: ['Practice and learn the scales on the freboard.', 'Built with <a href="https://reactjs.org/" target="_blank" rel="noopener">React</a>']},
+                    {title: 'Scales Buddy', url: 'https://scalesbuddy.com', image: '/images/scales_buddy.jpg', description: ['Practice and learn the scales on the freboard.', 'Built with <a href="https://reactjs.org/" target="_blank" rel="noopener">React</a>.']},
                     {title: 'Portfolio Site', url: 'https://www.iamguido.com', image: '/images/portfolio.jpg', git: 'https://github.com/cguidog/portfolio_2019', description: ['The same website you are at right now.', 'Built with <a href="https://reactjs.org/" target="_blank" rel="noopener">React</a>.', 'Uses Babel, Express, SVG & Webpack.']},
                     {title: 'RGB Color Guessing Game', url: 'https://cguidog.github.io/rgb-color-game/', image: '/images/rgb_game.jpg', git: 'https://github.com/cguidog/rgb-color-game', description: ['Test your RGB knowledge by picking the right color.','Built with Javascript.']}
                 ]
