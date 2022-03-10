@@ -8,10 +8,10 @@ const Projects = (props) => {
                 return (
                     <div key={props.professional.indexOf(project)} className="project_container">
                         <div className="project_image_container">
-                            <a href={project.url} target="_blank"><img src={project.image}/></a>
+                            {project.url ? <a href={project.url} target="_blank" rel="noopener"><img src={project.image}/></a> : <a><img src={project.image}/></a>}
                         </div>
                         <div className="project_info">
-                            <a href={project.url} target="_blank"><h2>{project.title}</h2></a>
+                            {project.url ? <a href={project.url} target="_blank" rel="noopener"><h2>{project.title}</h2></a> : <a><h2>{project.title}</h2></a>} 
                             <Details description={project.description}/>
                         </div>
                     </div>
@@ -24,15 +24,15 @@ const Projects = (props) => {
                 return (
                     <div key={props.personal.indexOf(project)} className="project_container">
                         <div className="project_image_container">
-                            <a href={project.url} target="_blank"><img src={project.image}/></a>
+                            <a href={project.url} target="_blank" rel="noopener"><img src={project.image}/></a>
                         </div>
                         <div className="project_info">
                             <div className="project_info_header">
                                 <div>
-                                    <a href={project.url} target="_blank"><h2>{project.title}</h2></a>
+                                    <a href={project.url} target="_blank" rel="noopener"><h2>{project.title}</h2></a>
                                 </div>
                                 <div>
-                                    <a href={project.git} target="_blank"><i className="fab fa-github"></i></a>
+                                    <a href={project.git} target="_blank" rel="noopener"><i className="fab fa-github"></i></a>
                                 </div>
                             </div>
                             <Details description={project.description}/>

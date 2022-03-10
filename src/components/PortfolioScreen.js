@@ -15,13 +15,14 @@ export default class PortfolioScreen extends React.Component {
             title1: 'Professional Projects',
             title2: 'Personal Projects',
             projects: [[
+                    {title: 'Apply to Vet School', url: null, image: '/images/vmsar.jpg', description: ['Online Veterinary School Catalog', 'Headless Wordpress website built with <a href="https://reactjs.org/" target="_blank" rel="noopener">React</a> and <a href="https://nextjs.org/" target="_blank" rel="noopener">NextJS</a>', 'Uses <a href="https://www.wpgraphql.com/" target="_blank" rel="noopener">WPGraphQl</a>, <a href="https://www.apollographql.com/" target="_blank" rel="noopener">Apollo</a>']},
                     {title: 'Kraemer & Kraemer', url: 'https://kraemerlaw.com', image: '/images/kraemer_law.jpg', description: ['Website managed with WordPress.', 'SEO optimization.', 'Speed and Performance optimization.', 'Theme and Plugin customization using JavaScript and PHP.']},
                     {title: 'Panama retirees and Pensioners Visa', url: 'https://panamaretireespensionersvisa.com/', image: '/images/prpv.jpg', description: ['Website managed with WordPress.', 'SEO optimization.', 'Speed and Performance optimization.', 'Theme and Plugin customization using JavaScript and PHP.']},
                     {title: 'Lácteos Don Joaquín', url: 'https://lacteosdonjoaquin.com/', image: '/images/don_joaquin.jpg', description: ['Website managed with WordPress.', 'SEO optimization.', 'Speed and Performance optimization.']}
                 ],
                 [
-                    {title: 'Scales Buddy', url: 'https://scalesbuddy.com', image: '/images/scales_buddy.jpg', description: ['Practice and learn the scales on the freboard.', 'Built with ReactJS']},
-                    {title: 'Portfolio Site', url: 'https://www.iamguido.com', image: '/images/portfolio.jpg', git: 'https://github.com/cguidog/portfolio_2019', description: ['The same website you are at right now.', 'Built with ReactJS.', 'Uses Babel, Express, SVG & Webpack.']},
+                    {title: 'Scales Buddy', url: 'https://scalesbuddy.com', image: '/images/scales_buddy.jpg', description: ['Practice and learn the scales on the freboard.', 'Built with <a href="https://reactjs.org/" target="_blank" rel="noopener">React</a>']},
+                    {title: 'Portfolio Site', url: 'https://www.iamguido.com', image: '/images/portfolio.jpg', git: 'https://github.com/cguidog/portfolio_2019', description: ['The same website you are at right now.', 'Built with <a href="https://reactjs.org/" target="_blank" rel="noopener">React</a>.', 'Uses Babel, Express, SVG & Webpack.']},
                     {title: 'RGB Color Guessing Game', url: 'https://cguidog.github.io/rgb-color-game/', image: '/images/rgb_game.jpg', git: 'https://github.com/cguidog/rgb-color-game', description: ['Test your RGB knowledge by picking the right color.','Built with Javascript.']}
                 ]
             ]
