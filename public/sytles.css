@@ -123,7 +123,7 @@ html {
 /* ============================================================= */
 .welcome_div {
     background-attachment: fixed;
-    background-image: url('/images/welcome.png');
+    background-image: url('/images/welcome.jpg');
     display: block;
     height: 100vh;
     overflow: hidden;
@@ -133,14 +133,8 @@ html {
     margin: auto;
     padding: 40vh 0;
     color: #2ca1a1;
-    /* left: 50%; */
-    /* margin: 0; */
-    opacity: 0.2;
-    /* position: absolute; */
+    opacity: 0.7;
     text-align: center;
-    /* top: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* width: 40%; */
 }
 
 .title h1 {
