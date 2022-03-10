@@ -5,7 +5,7 @@ const Details = (props) => {
         <ul>
         {props.description.map((descript)=> {
             return (
-                <li key={props.description.indexOf(descript)}>{descript}</li>
+                <li key={props.description.indexOf(descript)} dangerouslySetInnerHTML={{ __html: descript}}/>
             )
         })}
         </ul>
