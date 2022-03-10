@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div id='contact'>
             <div className='contact_container'>
-                <div><a href='https://github.com/cguidog' target='_blank'><i className="fab fa-github"></i></a></div>
+                <div><a href='https://linkedin.com/in/carlos-guido-8a1179217' target='_blank'><i class="fa-brands fa-linkedin-in"></i></a></div>
             </div>
         </div>
     )
