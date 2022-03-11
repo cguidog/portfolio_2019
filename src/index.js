@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import './App.css';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Header from './components/Header';
+import Welcome from './components/Welcome';
+import Skills from './components/Skills';
+import PortfolioScreen from './components/PortfolioScreen';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header/>
+    <Welcome/>
+    <Skills/>
+    <PortfolioScreen/>
   </React.StrictMode>,
   document.getElementById('root')
 );
