@@ -1,45 +1,39 @@
-import React from 'react';
+const Skills = () =>
+    <div id="about" className="about">
+        <div className="trim_top animated bounceInRight delay-2s">
+            <div className="trim_block"></div>
+            <div className="trim_block"></div>
+            <div className="trim_block"></div>
+            <div className="trim_white"></div>
+        </div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="description animated bounceInLeft delay-2s">I am a self-taught web developer who loves to create: from building furniture to designing clothes, from tiling kitchens to writing code.</div>
+        <div className="skills animated bounceInRight delay-2s">I build responsive web applications using HTML, CSS, JavaScript and PHP. I also have experience working with React, NodeJS, Mongo and MySQL databases and Wordpress.</div>
+        <div className="trim_bottom animated bounceInLeft delay-2s">
+            <div className="trim_white"></div>
+            <div className="trim_block"></div>
+            <div className="trim_block"></div>
+            <div className="trim_block"></div>
+        </div>
+    </div>
 
-export default class Skills extends React.Component {
-    render () {
-        return (
-            <div id="about" className="about">
-               
-                <div className="trim_top animated bounceInRight delay-2s">
-                    <div className="trim_block"></div>
-                    <div className="trim_block"></div>
-                    <div className="trim_block"></div>
-                    <div className="trim_white"></div>
-                </div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="description animated bounceInLeft delay-2s">I am a self-taught web developer who loves to create: from building furniture to designing clothes, from tiling kitchens to writing code.</div>
-                <div className="skills animated bounceInRight delay-2s">I build responsive web applications using HTML, CSS, JavaScript and PHP. I also have experience working with React, NodeJS, Mongo and MySQL databases and Wordpress.</div>
-                <div className="trim_bottom animated bounceInLeft delay-2s">
-                    <div className="trim_white"></div>
-                    <div className="trim_block"></div>
-                    <div className="trim_block"></div>
-                    <div className="trim_block"></div>
-                </div>
-            </div>
-        );
-    };
-};
+export default Skills;

@@ -1,12 +1,19 @@
 /* =============================================================== */
 /* ==================== GENERAL CUSTOMIZATION ==================== */
 /* =============================================================== */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;1,600&family=Source+Code+Pro:wght@200;600&display=swap');
+/* =============================================================== */
+/* ==================== GENERAL CUSTOMIZATION ==================== */
+/* =============================================================== */
 
 a {
     text-decoration: none;
     color: #2ca1a1;
+    transition: all 0.2s ease-in-out;
 }
-
+a:hover {
+    color: #FF531B;
+}
 body {
     margin: 0!important;
     font-family: 'Source Code Pro', monospace;
@@ -18,137 +25,12 @@ html {
     scroll-behavior: smooth;
   }
 
-/* =============================================================== */
-/* ========================= MENU BEGINS ========================= */
-/* =============================================================== */
-
-/* INITIAL ANIMATION */
-.circle {
-    animation: mymove 3s forwards;
-    float: left;
-    margin: 2rem;
-    opacity: 0;
-    position: fixed;
-    top: 15%;
-    right: 100%;
-    z-index: 1001;
-    transform: scale(0.1);
-    transition: all 0.5s ease-out;
-}
-
-.circle_open {
-    float: left;
-    margin: 2rem;
-    opacity: 1;
-    position: fixed;
-    top: 15%;
-    right: -10%;
-    z-index: 1001;
-    transform: scale(0.3);
-    transition: all 0.5s ease-out;
-}
-
-.circle_close {
-    float: left;
-    margin: 2rem;
-    opacity: 1;
-    position: fixed;
-    top: 15%;
-    right: -10%;
-    z-index: 1001;
-    transform: scale(0.3);
-    transition: all 0.5s ease-out;
-}
-@keyframes mymove {
-    5% {transform: scale(0.5);
-    opacity: 1;
-    }
-    10% {
-        transform: scale(0.5);
-    }
-    12% {transform: scale(0.5);
-    }
-    35% {transform: scale(0.5);
-    }
-    100% {
-        transform: scale(0.3);
-        opacity: 1;
-        right: -10%;
-    }
-}
-
-/* INITIAL ANIMATION */
-.plus {
-    animation: reveal 3s forwards;
-    cursor: pointer;
-    opacity: 0;
-    transform-origin: 71% 80%;
-    transition: transform 2s;
-    transition: fill 0.5s;
-    
-}
-
-@keyframes reveal {
-    80% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.plus_closed {
-    cursor: pointer;
-    transform: rotate(-360deg);
-    transform-origin: 71% 80%;
-    transition: transform 0.5s;
-}
-
-.plus_active {
-    cursor: pointer;
-    fill: red;
-    transform: rotate(315deg);
-    transform-origin: 71% 80%;
-    transition: all 0.5s;
-}
-
-.hidden {
-    opacity: 0;
-    height: 0px;
-    transition: all 0.5s;
-}
-.show {
-    opacity: 1;
-    height: 1600px;
-    transition: all 0.5s;
-    width: 800px;
-    scale: 1.5;
-}
-
-.menu_hidden {
-    opacity: 0;
-    display: none;
-}
-
-.menu_visible {
-    opacity: 1;
-    transition: all 1s;
-}
-
-/* ============================================================= */
-/* ========================= MENU ENDS ========================= */
-/* ============================================================= */
-
-
-
-
-
 /* ============================================================= */
 /* =================== WELCOME SCREEN BEGINS =================== */
 /* ============================================================= */
 .welcome_div {
     background-attachment: fixed;
-    background-image: url('/images/welcome.jpg');
+    background-image: url('./../public/images/welcome.jpg');
     display: block;
     height: 100vh;
     overflow: hidden;
@@ -187,7 +69,46 @@ html {
     height: 3rem;
     width: 1.5rem;
 }
+.arrows_container {
+    color: white;
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+}
 
+svg > #Arrows > g > g {
+    fill: #b9441d;
+    animation: arrows 4s infinite;
+    opacity: 0;
+    transition: all 0.5 ease-in-out;
+}
+
+svg > #Arrows > g:nth-of-type(1) > g {
+    animation-delay: 2s;
+}
+
+svg > #Arrows > g:nth-of-type(2) > g {
+    animation-delay: 3s;
+}
+
+svg > #Arrows > g:nth-of-type(3) > g {
+    animation-delay: 4s;
+}
+
+
+
+@keyframes arrows {
+    33% {
+        opacity: 0;
+        }
+    66% {
+        opacity: 0.7;
+        }
+        100% {
+            opacity: 0;
+        }
+}
 @keyframes blink {
     50% {
     opacity: 0;
@@ -373,6 +294,7 @@ html {
     color: #2ca1a1;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1.5rem;
+    font-weight: 600;
     left: 0%;
     margin-left: 5rem;
     margin-top: 10rem;
@@ -388,6 +310,7 @@ html {
     color: #2ca1a1;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1.5rem;
+    font-weight: 600;
     margin: 5rem 0 17rem 5rem;
     padding: 2rem 0 0 2rem;
     position: relative;
@@ -503,6 +426,11 @@ div.personal_title > h2, div.personal_title_selected > h2, div.professional_titl
 .project_info {
     padding: 1rem;
 }
+.project_info li {
+    font-weight: 600;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
 .portfolio_professional > div > div > .project_container:nth-child(odd) {
     animation: enter_left_pro 1s forwards;
 }

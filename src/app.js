@@ -1,10 +1,18 @@
+import './App.css';
+import Header from './components/Header'
+import PortfolioScreen from './components/PortfolioScreen';
+import Skills from './components/Skills';
+import Welcome from './components/Welcome';
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Portfolio from './components/Portfolio';
-import './styles/style.css';
+function App() {
+  return (
+    <div className="App">
+        <Header/>
+        <Welcome/>
+        <Skills/>
+        <PortfolioScreen/>
+    </div>
+  );
+}
 
-
-
-ReactDOM.render(<Portfolio />, document.getElementById('app'))
-
+export default App;
