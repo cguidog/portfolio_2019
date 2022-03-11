@@ -701,7 +701,7 @@ div.personal_title > h2, div.personal_title_selected > h2, div.professional_titl
         text-align: center;
     }
 
-    .project_image_container > a > img {
+    .project_image_container > a > img, .project_image_container > img {
         max-width: 90%;
         padding: 0.5rem;
     }
@@ -891,7 +891,7 @@ div.personal_title > h2, div.personal_title_selected > h2, div.professional_titl
         text-align: center;
     }
 
-    .project_image_container > a > img {
+    .project_image_container > a > img, .project_image_container > img {
         max-width: 90%;
         padding: 0.5rem;
     }
@@ -1082,7 +1082,7 @@ div.personal_title > h2, div.personal_title_selected > h2, div.professional_titl
         text-align: center;
     }
 
-    .project_image_container > a > img {
+    .project_image_container > a > img, .project_image_container > img {
         max-width: 90%;
         padding: 0.5rem;
     }
