@@ -7,7 +7,10 @@ export default function Match() {
   const [match, setMatch] = useState<IconType[]>([]);
   const [matchIndex, setMatchIndex] = useState<number[]>([]);
   const [matches, setMatches] = useState<number[]>([]);
+  const [initial, setInitial] = useState<boolean>(true);
   const [show, setShow] = useState<boolean>(true);
+  const [hover, setHover] = useState<number | null>(null);
+  const [reset, setReset] = useState<boolean>(false);
 
   useEffect(() => {
     function shuffleArray(array: IconType[]) {
@@ -20,6 +23,7 @@ export default function Match() {
     setTimeout(()=> {
       setShow(false);
       setCards(shuffleArray(cardsArray));
+      setTimeout(()=> setInitial(false), 1000);
     }, 7000)
   }, []);
 
@@ -31,17 +35,27 @@ export default function Match() {
         setMatchIndex([]);
       } else {
         setTimeout(() => {
-          setMatch([]);
-          setMatchIndex([]);
-        }, 1000);
+          setReset(true);
+          setTimeout(()=> {
+            setMatch([]);
+            setMatchIndex([]);
+          }, 200)
+        }, 1200);
       }
     }
 
   }, [match])
 
   const handleMatch = (item: IconType, index: number): void => {
+    reset && setReset(false);
+    setHover(null);
     setMatch([...match, item]);
     setMatchIndex([...matchIndex, index])
+  }
+
+  const handleHover = (index: number): void => {
+    index !== hover && matches.indexOf(index) === -1 && matchIndex.indexOf(index) === -1 && setHover(index);
+    index === hover && setHover(null);
   }
 
 
@@ -49,8 +63,21 @@ export default function Match() {
     <div className="gap-4 grid grid-cols-8 grid-rows-2">
       {cards && cards.map((card, index) => {
         return (
-          <div key={index} className={`${matchIndex.indexOf(index) !== -1 ? 'bg-sky-300' : matches.indexOf(index) !== -1 ? 'bg-teal-300' : 'bg-slate-300 hover:scale-105'} ${show ? 'animate-flip' : 'animate-flip_back' } rotate-y-90 rounded-xl`}>
-            <button disabled={matches.indexOf(index) !== -1 || matchIndex.indexOf(index) !== -1} id={index.toString()} onClick={() => match.length < 2 && handleMatch(card, index)} className={`${matchIndex.indexOf(index) === -1 && matches.indexOf(index) === -1 ? 'hover:fill-slate-700' : 'hover:fill-slate-500' } fill-slate-500 h-full w-full flex items-center justify-center`}>
+          <div key={index}>
+            <button disabled={matches.indexOf(index) !== -1 || matchIndex.indexOf(index) !== -1}
+            id={index.toString()}
+            onClick={() => match.length < 2 && handleMatch(card, index)}
+            onMouseEnter={()=>handleHover(index)}
+            onMouseLeave={()=>handleHover(index)}
+            className={`
+            ${matchIndex.indexOf(index) !== -1 ? 'bg-sky-300' : matches.indexOf(index) !== -1 ? 'bg-teal-300' : 'bg-slate-300'} 
+            ${ initial ? 'rotate-y-90' : null} 
+            ${initial && (show ? 'animate-flip_5500' : 'animate-flip_back') } 
+            ${index === hover ? 'animate-wiggle' : null} 
+            ${matchIndex.indexOf(index) !== -1 && !reset ? 'animate-flip_back' : null} 
+            ${matchIndex.indexOf(index) !== -1 && reset ? 'animate-flip_200' : null} 
+            fill-slate-500 flex items-center justify-center p-2 rounded-xl disabled:fill-slate-500 hover:fill-slate-700
+            `}>
               <Icon show={matchIndex.indexOf(index) !== -1 || matches.indexOf(index) !== -1 || show} name={card} />
               <Icon show={matchIndex.indexOf(index) === -1 && matches.indexOf(index) === -1 && !show} name={'code'} />
             </button>

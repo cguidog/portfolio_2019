@@ -20,6 +20,6 @@ interface IconInt {
 export default function Icon( {name, show}: IconInt) {
   const svgElement = icons[name];
   return (
-<div className={!show ? 'hidden' : ''} dangerouslySetInnerHTML={{__html: svgElement}}/>
+<div className={`${!show ? 'w-0 opacity-0 overflow-hidden' : 'opacity-1 w-auto'} transition-opacity delay-100`} dangerouslySetInnerHTML={{__html: svgElement}}/>
     )
 }
