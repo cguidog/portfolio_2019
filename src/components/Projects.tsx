@@ -39,12 +39,13 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className='gap-4 grid grid-cols-2 p-4 max-w-7xl m-auto' ref={targetRef}>
-      Hello from the Projects
-      {loading && 'Loading'}
-      {projects && projects.map((project, index) => {
-        return <Project key={index} name={project.name} url={project.url} githubUrl={project.githubUrl} thumbnail={project.thumbnail} features={project.features} />
-      })}
-    </div>
+    <section className="p-4" ref={targetRef}>
+      <div className="gap-4 grid grid-cols-1 md:grid-cols-2 w-full max-w-7xl m-auto py-16 lg:py-8">
+        {loading && 'Loading'}
+        {projects && projects.map((project, index) => {
+          return <Project key={index} name={project.name} url={project.url} githubUrl={project.githubUrl} thumbnail={project.thumbnail} features={project.features} />
+        })}
+      </div>
+    </section>
   )
 }
