@@ -1,5 +1,6 @@
 import { ProjectInt } from "@/resources/projects"
 import { useState, useEffect, useRef } from "react";
+import Image from 'next/image';
 
 export default function Project(props: ProjectInt) {
   const { name, url, githubUrl, thumbnail, features } = props;
@@ -25,7 +26,7 @@ export default function Project(props: ProjectInt) {
     <div className="overflow-hidden" ref={targetRef}>
       <div className={`${visible ? 'opacity-1' : 'opacity-0'} top-0 group bg-gradient-to-r from-sky-700 to-sky-900 drop-shadow-[0px_0px_2px_rgba(0,0,0,0.75)] flex flex-col gap-4 h-full p-4 rounded-lg transition-all ease-out duration-300`}>
         {thumbnail && <div className="overflow-hidden rounded-lg drop-shadow-[0px_0px_2px_rgba(0,0,0,0.75)]">
-          <img className="scale-100 group-hover:scale-105 transition-all ease-out duration-1000" src={thumbnail} />
+          <Image className="scale-100 group-hover:scale-105 transition-all ease-out duration-1000" src={thumbnail} width="650" height="317" alt={`${name} website screenshot`}/>
         </div>}
         <div className="flex flex-col justify-between gap-4">
           <div className="flex justify-between">
