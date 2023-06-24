@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="bg-gradient-to-r from-sky-700 to-sky-900 drop-shadow-[0px_0px_2px_rgba(0,0,0,0.75)] grid grid-rows-2 p-4 opacity-0 rounded-lg transition-all ease-out duration-300 animate-block_2 row-span-2 relative">
           <div className="flex flex-col justify-end p-4 text-text-white" >
             <p className="text-5xl md:text-6xl font-extrabold">Hi!</p>
-            <h1 className="text-4xl">I'm Carlos Guido,</h1></div>
+            <h1 className="text-4xl">I&apos;m Carlos Guido,</h1></div>
           <div className="flex flex-col justify-start p-4">
             <div className="grid grid-cols-4">
               <div className="col-span-1 grid md:items-center text-5xl md:text-6xl text-text-white">
