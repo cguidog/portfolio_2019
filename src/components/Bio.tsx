@@ -7,9 +7,9 @@ export default function Bio() {
   const [shadow, setShadow] = useState<boolean>(false);
 
   const blocks: BioBlockInt[] = [
-    {text: 'I am a full-stack software developer who loves to create. From building furniture to designing clothes, from tiling kitches to writing code.',
+    {text: 'I am a full-stack software developer who loves to create. From building furniture to designing clothes, from tiling kitchens to writing code.',
     styles: 'col-span-1 p-4 text-3xl md:text-4xl text-text-white transition-all ease-out duration-500'},
-    {text: 'I build beautiful websites and web applications with a focus on user experience, SEO and accessibility. Make sure to checkout the Projects section to learn a little bit more about my work.',
+    {text: 'I build beautiful websites and web applications with a focus on user experience, SEO, and accessibility. Make sure to checkout the Projects section to learn a little bit more about my work.',
     styles: 'col-start-2 p-4 row-start-2 row-span-1 text-3xl md:text-4xl text-text-white transition-all ease-out duration-300'},];
 
   useEffect(() => {

@@ -63,8 +63,8 @@ export default function Match() {
     <div className="gap-4 grid grid-cols-4 lg:grid-cols-8 grid-rows-4 lg:grid-rows-2">
       {cards && cards.map((card, index) => {
         return (
-          <div className='[perspective:1000px] h-20 lg:h-full w-full' key={index}>
-            <button disabled={matches.indexOf(index) !== -1 || matchIndex.indexOf(index) !== -1 || initial }
+          <div className="[perspective:1000px] h-20 lg:h-full w-full" key={index}>
+            <button type="button" aria-label={`Match game - ${card} card`} disabled={matches.indexOf(index) !== -1 || matchIndex.indexOf(index) !== -1 || initial }
             id={index.toString()}
             onClick={() => match.length < 2 && handleMatch(card, index)}
             className={`${matchIndex.indexOf(index) !== -1 || matches.indexOf(index) !== -1 || show ? 'rotate-y-180' : null} ${matches.indexOf(index) != -1 ? 'rotate-y-90 animate-wiggle' : null} ${matches.length === 16 && 'rotate-y-180'} duration-300 h-full w-full relative rounded-md transition-all lg:enabled:hover:scale-110 [transform-style:preserve-3d]`}>
