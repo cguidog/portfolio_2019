@@ -36,7 +36,6 @@ export default function Match() {
         }, 1000);
       }
     }
-
   }, [match])
 
   useEffect(()=> {
