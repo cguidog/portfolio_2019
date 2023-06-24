@@ -23,7 +23,7 @@ export default function Project(props: ProjectInt) {
     }
   }, []);
   return (
-    <div className="overflow-hidden" ref={targetRef}>
+    <div ref={targetRef}>
       <div className={`${visible ? 'opacity-1' : 'opacity-0'} top-0 group bg-gradient-to-r from-sky-700 to-sky-900 drop-shadow-[0px_0px_2px_rgba(0,0,0,0.75)] flex flex-col gap-4 h-full p-4 rounded-lg transition-all ease-out duration-300`}>
         {thumbnail && <div className="overflow-hidden rounded-lg drop-shadow-[0px_0px_2px_rgba(0,0,0,0.75)]">
           <Image className="scale-100 group-hover:scale-105 transition-all ease-out duration-1000" src={thumbnail} width="650" height="317" alt={`${name} website screenshot`}/>
