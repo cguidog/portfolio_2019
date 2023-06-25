@@ -1,12 +1,12 @@
 import { DataType } from '../pages/api/projects'
-import Image from 'next/image'
 import Project from './Project'
 import { ProjectInt } from '../resources/projects'
 import { useEffect, useRef, useState } from 'react'
+import Loading from './Loading';
 
 
 export default function Projects() {
-  
+
   const targetRef = useRef(null);
   const [projects, setProjects] = useState<ProjectInt[] | []>([]);
   const [loading, setLoading] = useState<boolean>(false);
@@ -16,13 +16,13 @@ export default function Projects() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setLoading(true);
-            const fetchProjects = async () => {
-              const response = await fetch('api/projects');
-              const data: DataType = await response.json();
-              setProjects(data.projects);
-              setLoading(false);
-            }
-            fetchProjects();
+          const fetchProjects = async () => {
+            const response = await fetch('api/projects');
+            const data: DataType = await response.json();
+            setProjects(data.projects);
+            setLoading(false);
+          }
+          fetchProjects();
         }
       });
     });
@@ -40,12 +40,15 @@ export default function Projects() {
 
   return (
     <section className="p-4" ref={targetRef}>
-      <div className="gap-4 grid grid-cols-1 md:grid-cols-2 w-full max-w-7xl m-auto py-16 lg:py-8">
-        {loading && 'Loading'}
+      {loading ? <div className="gap-4 grid grid-cols-1 md:grid-cols-2 w-full max-w-7xl m-auto py-16 lg:py-8">
+        <Loading />
+        <Loading />
+      </div> : <div className="gap-4 grid grid-cols-1 md:grid-cols-2 w-full max-w-7xl m-auto py-16 lg:py-8">
         {projects && projects.map((project, index) => {
           return <Project key={index} name={project.name} url={project.url} githubUrl={project.githubUrl} thumbnail={project.thumbnail} features={project.features} />
         })}
       </div>
+      }
     </section>
   )
 }
