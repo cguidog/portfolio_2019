@@ -9,7 +9,7 @@ export default function Document() {
         <title>I am Guido</title>
       </Head>
       <body>
-      <Script id="gtag_script" src="https://www.googletagmanager.com/gtag/js?id=G-Y82ZSGRY20" ></Script>
+      <Script id="gtag_script" src="https://www.googletagmanager.com/gtag/js?id=G-Y82ZSGRY20" strategy="lazyOnload"></Script>
         <Script id="gtag" strategy="lazyOnload">
           {`window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
