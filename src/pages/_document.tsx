@@ -7,14 +7,14 @@ export default function Document() {
       <Head>
         <link rel="icon" href="/favicon.png" type="image" />
         <title>I am Guido</title>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-Y82ZSGRY20" ></Script>
+      </Head>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-Y82ZSGRY20" ></Script>
         <Script id="gtag" strategy="lazyOnload">
           {`window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-Y82ZSGRY20');`}
         </Script>
-      </Head>
       <body>
         <Main />
         <NextScript />
