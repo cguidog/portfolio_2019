@@ -8,6 +8,7 @@ export default function Document() {
         <link rel="icon" href="/favicon.png" type="image" />
         <title>I am Guido</title>
       </Head>
+      <body>
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-Y82ZSGRY20" ></Script>
         <Script id="gtag" strategy="lazyOnload">
           {`window.dataLayer = window.dataLayer || [];
@@ -15,7 +16,6 @@ export default function Document() {
         gtag('js', new Date());
         gtag('config', 'G-Y82ZSGRY20');`}
         </Script>
-      <body>
         <Main />
         <NextScript />
       </body>
