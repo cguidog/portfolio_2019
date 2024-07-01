@@ -27,7 +27,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="animate-block col-span-2 row-span-2 grid grid-col-1 opacity-0 rounded-lg">
+        <div className="col-span-2 row-span-2 grid grid-col-1 rounded-lg">
           <Match />
         </div>
       </div>

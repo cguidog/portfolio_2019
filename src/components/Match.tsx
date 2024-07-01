@@ -63,7 +63,7 @@ export default function Match() {
     <div className="gap-4 grid grid-cols-4 lg:grid-cols-8 grid-rows-4 lg:grid-rows-2">
       {cards && cards.map((card, index) => {
         return (
-          <div className="[perspective:1000px] h-20 lg:h-full w-full" key={index}>
+          <div className={`[perspective:1000px] h-20 opacity-0 animate-[block_1s_ease-in-out_forwards] lg:h-full w-full`} style={{animationDelay: `${index * 0.10}s`}} key={index}>
             <button type="button" aria-label={`Match game - ${card} card`} disabled={matches.indexOf(index) !== -1 || matchIndex.indexOf(index) !== -1 || initial }
             id={index.toString()}
             onClick={() => match.length < 2 && handleMatch(card, index)}

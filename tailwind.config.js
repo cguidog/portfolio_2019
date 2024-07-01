@@ -60,7 +60,7 @@ module.exports = {
       animation: {
         appear: 'appear 1s ease-in-out 5.5s forwards',
         appear_2: 'appear 1s ease-in-out 6s forwards',
-        block: 'block 3s ease-in-out 0.5s forwards',
+        block: 'block 3s ease-in-out forwards',
         block_2: 'block 3s ease-in-out 1.5s forwards',
         slide_up: 'slide_up 0.2s ease-in-out 3.3s forwards',
         slide_up_2: 'slide_up 0.2s ease-in-out 4.3s forwards',
